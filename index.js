@@ -1,5 +1,6 @@
 /****************** Dependencies ******************/
 const express = require('express')
+const question = require('./controllers/question')
 
 /****************** Enable Express ******************/
 const app = express()
@@ -14,8 +15,26 @@ app.set('views','./views');
 
 /****************** Paths ******************/
 app.get('/', (req, res) => {
-    res.render('helloWorld')
+    res.render('home')
 })
+
+app.get('/about', (req, res) => {
+    res.render('about')
+})
+
+app.get('/location', (req, res) => {
+    res.render('location')
+})
+
+app.get('/mission', (req, res) => {
+    res.render('mission')
+})
+
+app.get('/contact', (req, res) => {
+    res.render('contact')
+})
+
+app.get('/answer/:answ?', question)
 
 //Capture All 404 errors
 app.use( (req,res,next) => {

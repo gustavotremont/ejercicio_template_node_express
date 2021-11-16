@@ -1,0 +1,18 @@
+doctype html
+html
+   head
+      title Hello
+      link(rel="stylesheet", href="/styles/normalize.css")
+      link(rel="stylesheet", href="/styles/style.css")
+   body
+      include ./header.pug
+      main 
+        if answer == 'true' 
+            h1 Lo Sabiamos
+            img(src="https://www.petmd.com/sites/default/files/styles/article_image/public/CANS_dogsmiling_379727605.jpg?itok=E-nD1tXb", alt="perrito")
+        else if answer == 'false'
+            h1 No tienes corazón 
+            img(src="https://www.akc.org/wp-content/uploads/2019/07/do-dogs-grieve-other-dogs.jpg", alt="perrito")
+        else 
+            h1 Pero si no has respondido nada???? 
+            img(src="https://previews.123rf.com/images/danilobiancalana/danilobiancalana1211/danilobiancalana121100133/16534271-un-peque%C3%B1o-perro-confundido.jpg", alt="perrito")

@@ -1,1 +1,40 @@
 /* ADD MODELS AND CHANGE NAME */
+
+nav#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: tomato;
+    padding: 0 100px;
+}
+
+#navbar>a img {
+    width: 150px;
+    height: 150px;
+}
+
+ul#navItems {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+#navItems li {
+    padding: 0 20px;
+}
+
+#navItems>li a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main p {
+    font-size: 20px;
+}
